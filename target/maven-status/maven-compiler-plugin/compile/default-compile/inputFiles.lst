@@ -1,0 +1,12 @@
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\AddQueueTags.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\DeadLetterQueues.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\GetQueueAttributes.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\LongPolling.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\SendMessages.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\SendReceiveMessages.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\SSEncryptionExample.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\ListQueueTags.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\SQSExample.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\VisibilityTimeout.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\DeleteQueue.java
+C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\src\main\java\com\example\sqs\RemoveQueueTag.java

@@ -1,0 +1,12 @@
+com\example\sqs\SQSExample.class
+com\example\sqs\RemoveQueueTag.class
+com\example\sqs\SendReceiveMessages.class
+com\example\sqs\VisibilityTimeout.class
+com\example\sqs\DeadLetterQueues.class
+com\example\sqs\ListQueueTags.class
+com\example\sqs\DeleteQueue.class
+com\example\sqs\SSEncryptionExample.class
+com\example\sqs\AddQueueTags.class
+com\example\sqs\SendMessages.class
+com\example\sqs\LongPolling.class
+com\example\sqs\GetQueueAttributes.class

@@ -1,0 +1,50 @@
+-------------------------------------------------------------------------------
+Test set: SQSServiceIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.548 s <<< FAILURE! - in SQSServiceIntegrationTest
+CreateSQSQueue  Time elapsed: 0.065 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+SendMessage  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+GetMessage  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+GetQueueAttributes  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+DeleteMessages  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "messages" is null
+	at SQSServiceIntegrationTest.DeleteMessages(SQSServiceIntegrationTest.java:102)
+
+LongPolling  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+DeadLetterQueues  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+
+DeleteQueue  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+

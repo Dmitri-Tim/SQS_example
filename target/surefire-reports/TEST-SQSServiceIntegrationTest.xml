@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SQSServiceIntegrationTest" time="0.548" tests="9" errors="8" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1257"/>
+    <property name="java.class.path" value="C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\target\test-classes;C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\target\classes;C:\Users\dmitrit\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\dmitrit\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\dmitrit\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\dmitrit\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\sqs\2.19.14\sqs-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-query-protocol\2.19.14\aws-query-protocol-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\protocol-core\2.19.14\protocol-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\sdk-core\2.19.14\sdk-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\dmitrit\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\auth\2.19.14\auth-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\http-client-spi\2.19.14\http-client-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\regions\2.19.14\regions-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\annotations\2.19.14\annotations-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\utils\2.19.14\utils-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-core\2.19.14\aws-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\metrics-spi\2.19.14\metrics-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\json-utils\2.19.14\json-utils-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.19.14\third-party-jackson-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\endpoints-spi\2.19.14\endpoints-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\apache-client\2.19.14\apache-client-2.19.14.jar;C:\Users\dmitrit\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\dmitrit\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dmitrit\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\dmitrit\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\netty-nio-client\2.19.14\netty-nio-client-2.19.14.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec-http\4.1.86.Final\netty-codec-http-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec-http2\4.1.86.Final\netty-codec-http2-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec\4.1.86.Final\netty-codec-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport\4.1.86.Final\netty-transport-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-resolver\4.1.86.Final\netty-resolver-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-common\4.1.86.Final\netty-common-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-buffer\4.1.86.Final\netty-buffer-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-handler\4.1.86.Final\netty-handler-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.86.Final\netty-transport-native-unix-common-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.86.Final\netty-transport-classes-epoll-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\s3\2.19.14\s3-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-xml-protocol\2.19.14\aws-xml-protocol-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\arns\2.19.14\arns-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\profiles\2.19.14\profiles-2.19.14.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Tallinn"/>
+    <property name="user.country.format" value="EE"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\dmitrit\AppData\Local\Temp\surefire11149006270873425648\surefirebooter265417288656486481.jar C:\Users\dmitrit\AppData\Local\Temp\surefire11149006270873425648 2023-03-02T15-41-01_470-jvmRun1 surefire12804840102093453785tmp surefire_0770515242526947107tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\target\test-classes;C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs\target\classes;C:\Users\dmitrit\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\dmitrit\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\dmitrit\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\dmitrit\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\dmitrit\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\sqs\2.19.14\sqs-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-query-protocol\2.19.14\aws-query-protocol-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\protocol-core\2.19.14\protocol-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\sdk-core\2.19.14\sdk-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\dmitrit\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\auth\2.19.14\auth-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\http-client-spi\2.19.14\http-client-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\regions\2.19.14\regions-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\annotations\2.19.14\annotations-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\utils\2.19.14\utils-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-core\2.19.14\aws-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\metrics-spi\2.19.14\metrics-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\json-utils\2.19.14\json-utils-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.19.14\third-party-jackson-core-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\endpoints-spi\2.19.14\endpoints-spi-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\apache-client\2.19.14\apache-client-2.19.14.jar;C:\Users\dmitrit\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\dmitrit\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dmitrit\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\dmitrit\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\netty-nio-client\2.19.14\netty-nio-client-2.19.14.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec-http\4.1.86.Final\netty-codec-http-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec-http2\4.1.86.Final\netty-codec-http2-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-codec\4.1.86.Final\netty-codec-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport\4.1.86.Final\netty-transport-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-resolver\4.1.86.Final\netty-resolver-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-common\4.1.86.Final\netty-common-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-buffer\4.1.86.Final\netty-buffer-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-handler\4.1.86.Final\netty-handler-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.86.Final\netty-transport-native-unix-common-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.86.Final\netty-transport-classes-epoll-4.1.86.Final.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\s3\2.19.14\s3-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\aws-xml-protocol\2.19.14\aws-xml-protocol-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\arns\2.19.14\arns-2.19.14.jar;C:\Users\dmitrit\.m2\repository\software\amazon\awssdk\profiles\2.19.14\profiles-2.19.14.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\dmitrit"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\dmitrit\AppData\Local\Temp\surefire11149006270873425648\surefirebooter265417288656486481.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="user.name" value="dmitrit"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1257"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\dmitrit\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\dmitrit\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.3.1"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="user.dir" value="C:\workspace\aws-doc-sdk-examples\javav2\example_code\sqs"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="et"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1257"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files (x86)\IDEMIA\AWP\Dlls;C:\Program Files\IDEMIA\AWP\Dlls;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\gradle\gradle-6.8.1\bin;C:\gradle\dependency-check\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\dmitrit\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Ruby31-x64\bin;C:\Users\dmitrit\AppData\Local\Microsoft\WindowsApps;C:\server\php;C:\Users\dmitrit\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\dmitrit\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="whenInitializingAWSService_thenNotNull" classname="SQSServiceIntegrationTest" time="0.011"/>
+  <testcase name="CreateSQSQueue" classname="SQSServiceIntegrationTest" time="0.065">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+    <system-out><![CDATA[
+Create Queue
+]]></system-out>
+  </testcase>
+  <testcase name="SendMessage" classname="SQSServiceIntegrationTest" time="0.002">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+  </testcase>
+  <testcase name="GetMessage" classname="SQSServiceIntegrationTest" time="0.007">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+    <system-out><![CDATA[
+Receive messages
+]]></system-out>
+  </testcase>
+  <testcase name="GetQueueAttributes" classname="SQSServiceIntegrationTest" time="0.004">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+  </testcase>
+  <testcase name="DeleteMessages" classname="SQSServiceIntegrationTest" time="0.001">
+    <error message="Cannot invoke &quot;java.util.List.iterator()&quot; because &quot;messages&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "messages" is null
+	at SQSServiceIntegrationTest.DeleteMessages(SQSServiceIntegrationTest.java:102)
+</error>
+    <system-out><![CDATA[
+Delete Messages
+]]></system-out>
+  </testcase>
+  <testcase name="LongPolling" classname="SQSServiceIntegrationTest" time="0.003">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+  </testcase>
+  <testcase name="DeadLetterQueues" classname="SQSServiceIntegrationTest" time="0.001">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+  </testcase>
+  <testcase name="DeleteQueue" classname="SQSServiceIntegrationTest" time="0.001">
+    <error message="To use Sso related properties in the &apos;default&apos; profile, the &apos;sso&apos; service module must be on the class path." type="java.lang.IllegalStateException">java.lang.IllegalStateException: To use Sso related properties in the 'default' profile, the 'sso' service module must be on the class path.
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+Caused by: java.lang.ClassNotFoundException: software.amazon.awssdk.services.sso.auth.SsoProfileCredentialsProviderFactory
+	at SQSServiceIntegrationTest.setUp(SQSServiceIntegrationTest.java:32)
+</error>
+  </testcase>
+</testsuite>
